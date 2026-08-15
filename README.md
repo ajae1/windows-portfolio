@@ -1,6 +1,6 @@
 # Windows Portfolio
 
-A Windows 7 Aero-inspired portfolio desktop for Aaron Edwards.
+A Windows 7 Aero-inspired portfolio desktop for me.
 
 The site is a static HTML/CSS/JavaScript project with:
 
