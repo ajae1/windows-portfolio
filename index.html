@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aaron Edwards | Aero Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="desktop" aria-label="Windows 7 inspired portfolio desktop">
+    <div class="wallpaper" aria-hidden="true">
+      <span class="flare flare-one"></span>
+      <span class="flare flare-two"></span>
+      <span class="light-ribbon ribbon-one"></span>
+      <span class="light-ribbon ribbon-two"></span>
+    </div>
 
+    <section class="desktop-icons" aria-label="Desktop shortcuts">
+      <button class="desktop-icon is-active" data-window-target="about-window" aria-label="Open About Me">
+        <span class="icon-tile user-icon"></span>
+        <span>About Me</span>
+      </button>
+      <button class="desktop-icon" data-window-target="projects-window" aria-label="Open Projects">
+        <span class="icon-tile folder-icon"></span>
+        <span>Projects</span>
+      </button>
+      <button class="desktop-icon" data-window-target="skills-window" aria-label="Open Skills">
+        <span class="icon-tile tools-icon"></span>
+        <span>Skills</span>
+      </button>
+      <button class="desktop-icon" data-window-target="contact-window" aria-label="Open Contact">
+        <span class="icon-tile mail-icon"></span>
+        <span>Contact</span>
+      </button>
+    </section>
+
+    <section class="window is-open" id="about-window" style="--x: 18%; --y: 9%; --w: 560px;" aria-labelledby="about-title">
+      <header class="titlebar">
+        <div class="title-group">
+          <span class="mini-icon user-icon"></span>
+          <h1 id="about-title">Aaron Edwards</h1>
+        </div>
+        <div class="window-controls" aria-label="Window controls">
+          <button class="win-btn minimize" data-action="minimize" aria-label="Minimize About Me"></button>
+          <button class="win-btn maximize" data-action="focus" aria-label="Focus About Me"></button>
+          <button class="win-btn close" data-action="close" aria-label="Close About Me"></button>
+        </div>
+      </header>
+      <div class="window-body about-layout">
+        <div class="profile-orb" aria-hidden="true">AE</div>
+        <div>
+          <p class="eyebrow">Portfolio Desktop</p>
+          <h2>Builder, learner, and systems tinkerer.</h2>
+          <p>I make practical projects with a little bit of style: web experiments, Python practice, and a larger voice-conversion research framework called GauntletVC.</p>
+          <div class="action-row">
+            <button class="aero-button" data-window-target="projects-window">View Projects</button>
+            <button class="aero-button ghost" data-window-target="contact-window">Contact</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="window is-open" id="projects-window" style="--x: 44%; --y: 18%; --w: 620px;" aria-labelledby="projects-title">
+      <header class="titlebar">
+        <div class="title-group">
+          <span class="mini-icon folder-icon"></span>
+          <h2 id="projects-title">Projects</h2>
+        </div>
+        <div class="window-controls" aria-label="Window controls">
+          <button class="win-btn minimize" data-action="minimize" aria-label="Minimize Projects"></button>
+          <button class="win-btn maximize" data-action="focus" aria-label="Focus Projects"></button>
+          <button class="win-btn close" data-action="close" aria-label="Close Projects"></button>
+        </div>
+      </header>
+      <div class="window-body">
+        <div class="explorer-bar">
+          <span>Computer</span>
+          <span>Portfolio</span>
+          <strong>Projects</strong>
+        </div>
+        <div class="project-list">
+          <article class="project-item">
+            <div class="project-icon gauntlet-icon"></div>
+            <div>
+              <h3>GauntletVC</h3>
+              <p>A quality-first voice-conversion research framework built to benchmark and combine strong RVC-era ideas into one cleaner pipeline.</p>
+              <span class="tag">Python</span><span class="tag">Audio ML</span><span class="tag">Research</span>
+            </div>
+          </article>
+          <article class="project-item">
+            <div class="project-icon portfolio-icon"></div>
+            <div>
+              <h3>Windows Portfolio</h3>
+              <p>This site: a Windows XP portfolio idea rebuilt with Windows 7 Aero glass, desktop windows, and playful interaction.</p>
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+          </article>
+          <article class="project-item">
+            <div class="project-icon python-icon"></div>
+            <div>
+              <h3>Python Practice</h3>
+              <p>A class and CS50 practice space for notes, exercises, and small experiments while building fundamentals.</p>
+              <span class="tag">Python</span><span class="tag">CS50</span><span class="tag">Learning</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="window" id="skills-window" style="--x: 13%; --y: 44%; --w: 520px;" aria-labelledby="skills-title">
+      <header class="titlebar">
+        <div class="title-group">
+          <span class="mini-icon tools-icon"></span>
+          <h2 id="skills-title">Skills</h2>
+        </div>
+        <div class="window-controls" aria-label="Window controls">
+          <button class="win-btn minimize" data-action="minimize" aria-label="Minimize Skills"></button>
+          <button class="win-btn maximize" data-action="focus" aria-label="Focus Skills"></button>
+          <button class="win-btn close" data-action="close" aria-label="Close Skills"></button>
+        </div>
+      </header>
+      <div class="window-body">
+        <div class="meter-grid">
+          <div class="meter"><span>Frontend</span><i style="--level: 78%"></i></div>
+          <div class="meter"><span>Python</span><i style="--level: 68%"></i></div>
+          <div class="meter"><span>Audio Tools</span><i style="--level: 56%"></i></div>
+          <div class="meter"><span>Research Systems</span><i style="--level: 62%"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="window" id="contact-window" style="--x: 57%; --y: 51%; --w: 460px;" aria-labelledby="contact-title">
+      <header class="titlebar">
+        <div class="title-group">
+          <span class="mini-icon mail-icon"></span>
+          <h2 id="contact-title">Contact</h2>
+        </div>
+        <div class="window-controls" aria-label="Window controls">
+          <button class="win-btn minimize" data-action="minimize" aria-label="Minimize Contact"></button>
+          <button class="win-btn maximize" data-action="focus" aria-label="Focus Contact"></button>
+          <button class="win-btn close" data-action="close" aria-label="Close Contact"></button>
+        </div>
+      </header>
+      <div class="window-body contact-body">
+        <p>Want to build, collaborate, or ask about a project?</p>
+        <a class="contact-link" href="https://github.com/ajae1">github.com/ajae1</a>
+        <a class="contact-link" href="mailto:aaronedwards329@gmail.com">aaronedwards329@gmail.com</a>
+      </div>
+    </section>
+
+    <aside class="start-menu" id="start-menu" aria-label="Start menu" aria-hidden="true">
+      <div class="start-user">
+        <div class="start-avatar">AE</div>
+        <div>
+          <strong>Aaron Edwards</strong>
+          <span>Portfolio session</span>
+        </div>
+      </div>
+      <nav class="start-links" aria-label="Portfolio sections">
+        <button data-window-target="about-window">About Me</button>
+        <button data-window-target="projects-window">Projects</button>
+        <button data-window-target="skills-window">Skills</button>
+        <button data-window-target="contact-window">Contact</button>
+      </nav>
+      <div class="start-search">Search programs and files</div>
+    </aside>
+
+    <footer class="taskbar" aria-label="Taskbar">
+      <button class="start-button" id="start-button" aria-expanded="false" aria-controls="start-menu">Start</button>
+      <div class="task-buttons" id="task-buttons" aria-label="Open windows"></div>
+      <div class="system-tray">
+        <span class="network-dot" aria-hidden="true"></span>
+        <time id="clock">00:00</time>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
